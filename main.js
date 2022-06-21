@@ -25,14 +25,14 @@ app.whenReady().then(() => {
     contents.loadURL('https://admin.whitelabelapp.in', options);
   }, 1000);
 
-  const server = 'https://your-deployment-url.com'
-  const feed = `${server}/update/${process.platform}/${app.getVersion()}`
+  // const server = 'https://your-deployment-url.com'
+  // const feed = `${server}/update/${process.platform}/${app.getVersion()}`
 
   // The following code won't work unless the app has been packaged.
   // You should only use the autoUpdater with packaged and code-signed
   // versions of your application.
   try {
-    autoUpdater.setFeedURL(feed);
+    // autoUpdater.setFeedURL(feed);
     autoUpdater.checkForUpdates();
   } catch (error) {
     console.log(error)
