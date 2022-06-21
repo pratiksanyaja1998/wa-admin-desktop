@@ -6,7 +6,7 @@
 const { app, BrowserWindow, webContents } = require('electron')
 
 app.whenReady().then(() => {
-  const mainWindow = new BrowserWindow({show: false});
+  const mainWindow = new BrowserWindow({show: false, icon:'assets/logo.png'});
   mainWindow.loadFile('index.html');
   mainWindow.maximize();
   mainWindow.show();
